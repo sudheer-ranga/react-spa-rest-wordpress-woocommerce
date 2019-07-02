@@ -7,7 +7,9 @@ import IndexPage from './pages/IndexPage/IndexPage';
 import PostDetailPage from './pages/PostDetailPage/PostDetailPage';
 import AboutPage from './pages/AboutPage/AboutPage';
 import ContactPage from './pages/ContactPage/ContactPage';
-import AuthorsPage from './pages/AuthorsPage/AuthorsPage';
+import StorePage from './pages/StorePage/StorePage';
+import StoreProductPage from './pages/StoreProductPage/StoreProductPage';
+
 import Layout from './components/Layout/Layout';
 
 const routing = (
@@ -15,9 +17,10 @@ const routing = (
     <Layout>
       <Route path="/" exact component={IndexPage} />
       <Route path="/post/:slug" component={PostDetailPage} />
-      <Route path="/about/" exact component={AboutPage} />
-      <Route path="/contact/" exact component={ContactPage} />
-      <Route path="/authors/" exact component={AuthorsPage} />
+      <Route path="/about" exact component={AboutPage} />
+      <Route path="/contact" exact component={ContactPage} />
+      <Route path="/store" exact component={StorePage} />
+      <Route path="/store/:slug" exact component={StoreProductPage} />
     </Layout>
   </Router>
 );

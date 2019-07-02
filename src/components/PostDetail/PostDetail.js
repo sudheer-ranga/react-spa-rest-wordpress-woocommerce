@@ -20,7 +20,7 @@ function PostDetail(props) {
   // check if post variable is set and then build the dom
   const postDom = post && (
     <div className="post-detail-wrapper">
-      <h3>{post.title.rendered}</h3>
+      <h1>{post.title.rendered}</h1>
       <div dangerouslySetInnerHTML={{ __html: post.content.rendered }} />
     </div>
   );

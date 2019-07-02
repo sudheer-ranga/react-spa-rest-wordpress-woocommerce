@@ -8,7 +8,9 @@ function Header() {
     <div className="header row">
       <div className="four columns logo-container">
         <h1 className="logo-text">
-          <Link to="/">React WP</Link>
+          <Link className="logo-link" to="/">
+            React WP
+          </Link>
         </h1>
       </div>
       <div className="eight columns logo-container">

@@ -13,11 +13,6 @@ function Navigation() {
             </Link>
           </li>
           <li className="navbar-item">
-            <Link className="navbar-link" to="/authors">
-              Authors
-            </Link>
-          </li>
-          <li className="navbar-item">
             <Link className="navbar-link" to="/about">
               About
             </Link>

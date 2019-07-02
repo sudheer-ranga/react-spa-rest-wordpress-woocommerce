@@ -7,11 +7,11 @@ function Post(props) {
 
   return (
     <div className="post-excerpt">
-      <h2>
-        <Link className="navbar-link" to={`/post/${post.slug}`}>
+      <h3>
+        <Link className="post-link" to={`/post/${post.slug}`}>
           {post.title.rendered}
         </Link>
-      </h2>
+      </h3>
       <div dangerouslySetInnerHTML={{ __html: post.excerpt.rendered }} />
     </div>
   );
